@@ -27,7 +27,7 @@ class MyBodyState extends State<MyBody> {
         appBar: AppBar(
           title: const Text('Список элементов'),
         ),
-        body: ListView.builder(itemBuilder: (context, i) {
+        body: ListView.builder(itemCount: 126,itemBuilder: (context, i) {
           if (i.isOdd) return Divider();
           final int index = i ~/ 2;
           twoPow = pow(2, index);
